@@ -1,0 +1,217 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5dc;
+    color: #333;
+    line-height: 1.6;
+    background-image: url('https://s-kluch-tog.edusite.ru/images/lenta2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #D2B48C;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    background-color: rgba(210, 180, 140, 0.8);
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+header .logo img {
+    margin-right: 20px;
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    display: inline-block;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: 2px solid transparent;
+}
+
+nav a:hover {
+    background-color: #8FBC8F;
+    color: white;
+    transform: translateY(-2px);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+main {
+    padding: 30px;
+    background-color: white;
+    margin: 30px auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    max-width: 960px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #D2B48C;
+    color: white;
+    margin-top: 50px;
+    border-radius: 0 0 12px 12px;
+    background-color: rgba(210, 180, 140, 0.8);
+}
+
+.hero {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    background-image: url('https://www.british-int-school.org.uk/wp-content/uploads/2022/04/bis-policies.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.hero h2 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    animation: slideInDown 1s ease-in-out;
+}
+
+.announcements {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.announcements h3 {
+    color: #D2691E;
+    margin-bottom: 15px;
+}
+
+/* Объявления в строку */
+.announcement-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.announcement-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 5px;
+    width: 30%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease; 
+}
+
+.announcement-item:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.announcement-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.announcements li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+nav a i {
+    margin-right: 8px;
+}
+
+/* Карточка информации */
+.info-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.info-card h3 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    color: #555;
+}
+
+/* Стиль для новостей */
+.news-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease; 
+}
+
+article:hover {
+    transform: scale(1.02); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+article h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+article img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
